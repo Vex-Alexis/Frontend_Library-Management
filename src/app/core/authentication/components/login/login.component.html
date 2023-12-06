@@ -1,0 +1,88 @@
+<div class="container">
+
+    <div class="container-hero">
+        <mat-card>
+            <mat-card-header>
+                <mat-card-title>Bienvenido Crack!!</mat-card-title>
+            </mat-card-header>
+            <mat-card-content>
+                <p>Disfruta tu recorrido joven rebelde, visionario e innovador.</p>
+            </mat-card-content>
+        </mat-card> 
+        <img mat-card-image src="assets/images/hero.svg">        
+    </div>    
+
+    <mat-card class="card-login" appearance="outlined">
+
+        <!-- Image -->
+        <div class="container-image">
+            <img mat-card-md-image src="assets/images/acceso.png">        
+        </div>
+
+        <!-- Login Titulo -->
+        <h1>Iniciar sesión</h1>        
+    
+        <mat-card-content>
+
+            <!-- Login form -->
+            <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
+                <mat-form-field appearance="outline">
+                    <mat-label>Correo electrónico</mat-label>
+                    <input type="email" matInput placeholder="Escribe tu correo electrónico" formControlName="email">
+                    <mat-error>El correo es <strong>requerido</strong></mat-error>
+                </mat-form-field>
+                
+                <mat-form-field appearance="outline">
+                    <mat-label>Contraseña</mat-label>
+                    <input type="password" matInput placeholder="Escribe tu contraseña" formControlName="password">
+                    <mat-error>La contraseña <strong>requerida</strong></mat-error>
+                </mat-form-field>
+                
+                <button mat-raised-button type="submit" color="primary">Ingresar</button>
+            </form>
+
+        </mat-card-content>
+
+    </mat-card>
+
+    <!-- <button (click)="mostrar()">Clic</button>
+    <span class="example-pizza-party" *ngIf="errorStatus">
+        <p>{{errorMessage}}</p>        
+    </span> -->
+
+</div>
+
+
+
+
+
+
+<!-- <mat-card style="padding: 0px 24px;">
+
+<div class="container text-center mt20">
+    <img src="assets/images/acceso.png" width="100" height="100">
+</div>
+
+<h1 class="text-center">Inicio de sesión</h1>
+
+<form action="">
+
+<mat-form-field class="full-width" appearance="outline">
+    <mat-label>Email / Usuario</mat-label>
+    <input type="email" matInput placeholder="Correo electrónico o nombre de usuario">
+</mat-form-field>
+
+<mat-form-field class="full-width" appearance="outline">
+    <mat-label>Contraseña</mat-label>
+    <input type="password" matInput placeholder="Ingrese su contraseña">
+</mat-form-field>
+
+<div class="container text-center">
+    <button mat-raised-button color="primary">Ingresar</button>
+    <button style="margin-left: 20px;" mat-raised-button color="accent">Limpiar</button>
+</div>
+</form>
+
+<br><br><br>
+
+</mat-card> -->
