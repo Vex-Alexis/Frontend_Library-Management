@@ -6,7 +6,7 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './header.component.html',
-  styles: ``
+  styleUrl: './header.component.css'
 })
 export class HeaderComponent {
 

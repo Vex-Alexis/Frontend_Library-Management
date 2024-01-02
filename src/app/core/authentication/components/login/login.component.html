@@ -28,13 +28,13 @@
             <form [formGroup]="loginForm" (ngSubmit)="onLogin()">
                 <mat-form-field appearance="outline">
                     <mat-label>Correo electrónico</mat-label>
-                    <input type="email" matInput placeholder="Escribe tu correo electrónico" formControlName="email">
+                    <input type="email" matInput autocomplete="off" placeholder="Escribe tu correo electrónico" formControlName="email">
                     <mat-error>El correo es <strong>requerido</strong></mat-error>
                 </mat-form-field>
                 
                 <mat-form-field appearance="outline">
                     <mat-label>Contraseña</mat-label>
-                    <input type="password" matInput placeholder="Escribe tu contraseña" formControlName="password">
+                    <input type="password" matInput autocomplete="off" placeholder="Escribe tu contraseña" formControlName="password">
                     <mat-error>La contraseña <strong>requerida</strong></mat-error>
                 </mat-form-field>
                 

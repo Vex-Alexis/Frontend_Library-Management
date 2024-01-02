@@ -54,7 +54,7 @@ export class LoginComponent {
 
   checkLocalStorage(){
     if(typeof localStorage !== 'undefined' && localStorage.getItem('token')){
-      this.router.navigate(['book-list']);
+      //this.router.navigate(['book-list']);
     }
   }
 
@@ -73,7 +73,7 @@ export class LoginComponent {
       let dataResponse:ResponseLogin = data;
       if(dataResponse.status == true){        
         localStorage.setItem("token", dataResponse.message);
-        this.router.navigate(['book-list']);
+        this.router.navigate(['home']);
       }
     },
     (error: HttpErrorResponse) => {

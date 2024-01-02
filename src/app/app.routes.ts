@@ -4,10 +4,12 @@ import { BookListComponent } from './modules/book/components/book-list/book-list
 import { BookFormComponent } from './modules/book/components/book-form/book-form.component'
 import { UserListComponent } from './modules/user/components/user-list/user-list.component'
 import { UserFormComponent } from './modules/user/components/user-form/user-form.component'
+import { HomeComponent } from './modules/home/components/home/home.component';
 
 export const routes: Routes = [
     { path: '', redirectTo: 'login', pathMatch: 'full'},
     { path: 'login', component: LoginComponent},
+    { path: 'home', component: HomeComponent},
     { path: 'book-list', component: BookListComponent},
     { path: 'book-form', component: BookFormComponent},
     { path: 'user-list', component: UserListComponent},
